@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        function kiemtra_snt (n) { 
+           var tager = true;
+            if ( n < 2) {
+                tager = false;
+            } else {
+                for ( i = 2; i < n-1; i++)
+                {
+                    if ( n % i == 0) {
+                        tager = false;
+                        break;
+                    }
+                }
+            }
+           return tager;
+        }
+        var  art = [13, 45, 22, 17, 89, 15, 17];
+        for ( let i = 0; i < art.length; i++) {
+            if (kiemtra_snt(art[i])) {
+                console.log(art[i]);
+            }
+        }
+        </script>
+</body>
+</html>
+</html>
